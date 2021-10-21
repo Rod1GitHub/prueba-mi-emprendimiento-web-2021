@@ -1,0 +1,24 @@
+.flex-container-parent
+{
+//Start Parent Flex
+display:            flex inline-flex;
+flex-direction:     row /* horizontal  */ column /* vertical */;
+flex-wrap:          wrap /* move down to the next line  */ nowrap wrap-reverse;
+justify-content:    /* horizontal */ flex-start flex-end center;
+align-items:        /* vertical for single line */ flex-start flex-end center;
+align-content:      /* vertical for multiple lines */ flex-start flex-end center;
+gap:                10px 20px; /* row-gap column-gap */
+//End Parent Flex
+}
+
+.flex-item-child
+{
+//Start Child Flex
+align-self:         /* vertical */ flex-start flex-end center;
+order:               -1;
+flex-grow:           0.6;
+flex-shrink:         0.6;
+flex-basis:         /* same as width */ auto 10em 200px fill max-content min-content fit-content content inherit initial revert unset;
+flex:               1 1 100px; /* flex-grow + flex-shrink + flex-basis (width) */
+//End Child Flex
+} 

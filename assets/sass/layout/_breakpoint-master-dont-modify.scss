@@ -1,0 +1,44 @@
+/* layout/breakpoint-master-dont-modify */
+/* For breakpoint control */
+/* Portable */
+/* 1. Define breakpoint variables. Sizes obtained from Bootstrap 4.6 */
+$breakpoints: (
+    'xx-large':"(min-width: 1400px)",
+    'x-large':"(min-width: 1200px) and (max-width: 1399.98px)",
+    'large':"(min-width: 992px) and (max-width: 1199.98px)",
+    'medium':"(min-width: 768px) and (max-width: 991.98px)",
+    'small':"(min-width: 576px) and (max-width: 767.98px)",
+    'x-small':"(max-width: 575.98px)", 
+);
+
+/* 2. Responsive breakpoint manager */
+
+@mixin screen-size($breakpoint) {
+    $raw-query: map-get($breakpoints, $breakpoint);
+  
+    @if $raw-query {
+      $query: if(
+        type-of($raw-query) == 'string',
+        unquote($raw-query),
+        inspect($raw-query)
+      );
+  
+      @media #{$query} {
+        @content;
+      }
+    } @else {
+      @error 'No value found for `#{$breakpoint}`. '
+           + 'Please make sure it is defined in `$breakpoints` map.';
+    }
+  }
+
+/* End of responsive breakpoint manager */
+
+/* 3. Sample. How to use it: This is a BEM approach (Block Element Modifier based approach) */
+
+/* body {
+  @include screen-size('x-large') {
+      font-family: Arial, Helvetica, sans-serif;
+  }
+}
+ */

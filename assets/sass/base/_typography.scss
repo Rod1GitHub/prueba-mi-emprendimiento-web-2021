@@ -1,0 +1,68 @@
+/* base/typography */
+
+body{
+    font-family: $font-poppins;
+    font-family: $font-ubuntu;
+    }
+    
+    h1 {
+        font-family: $font-ubuntu;
+        font-size: $xx-large;
+        font-weight: $weight-regular;
+    }
+    
+    h2 {
+        font-family: $font-poppins;
+        font-size: $xx-large;
+        font-weight: $weight-bold;
+    }
+    
+    h3 {
+        font-family: $font-poppins;
+        font-size: $x-large;
+        font-weight: $weight-bold;
+        padding:5px;
+    }
+
+    h4 {
+        font-family: $font-ubuntu;
+        font-size: $large;
+        color: $black;
+        font-weight: $weight-bold;
+        padding-top: .5em;
+        @media (max-width: 767.98px) {
+            font-size: $large;   
+    }
+    }
+
+    h5 {
+        font-family: $font-ubuntu;
+        font-size: $medium;
+        color: $black;
+        font-weight: $weight-regular;
+        padding-top: .5em;
+        @media (max-width: 767.98px) {
+            font-size: $medium;   
+    }
+    }
+  
+
+    
+    label {
+        font-family: $font-poppins;
+        font-size: $x-small;
+        font-weight: $weight-bold;
+        padding: 5px;;
+    }
+        
+    p {
+        font-family: $font-ubuntu;
+        font-size: $medium;
+        font-weight: $weight-regular;
+    }
+    
+    a {
+        font-family: $font-ubuntu;
+        font-size: $large;
+        font-weight: $weight-bold;
+    }

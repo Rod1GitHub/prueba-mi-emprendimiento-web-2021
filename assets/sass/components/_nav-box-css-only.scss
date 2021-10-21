@@ -1,0 +1,149 @@
+/* component/collapsable-menu-css-only */
+/* Use: Burguer Icon without JS */
+/* Portable */
+
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+.f-nav-box {
+        display:            flex;
+        flex-direction:     row;//horizontal
+        flex-wrap:          nowrap;//move down to the next line
+        justify-content:    space-between; //horizontal
+        //end flex properties
+        width: 90%;
+        margin: auto;
+
+        &__brand {
+        }
+
+        &__brand-logo {
+                width: auto;
+                height: 5em;
+                padding: 10px 0;
+                width: 200px; 
+                height: auto;
+                @media (max-width: 1199.98px) {
+                        width: 180px; 
+                        height: auto;
+                    }
+                    @media (max-width: 991.98px) {
+                        width: 160px; 
+                        height: auto;
+                    }
+                    @media (max-width: 767.98px) {
+                        width: 140px; 
+                        height: auto; 
+                    }
+                    @media (max-width: 575.98px) {
+                        width: 120px; 
+                        height: auto;
+                    }
+
+        }
+    
+        &__menu {
+        align-self: center;
+        @media (max-width: 991.98px) {
+        align-self: stretch;
+        padding: 20px 0; 
+
+        }
+                
+        }
+    }
+
+//===============================
+//  Collapsable Element
+//===============================
+// 1. Mixin
+//===============================
+@mixin animate{
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+        -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+}
+//===============================
+// 2 Input checkbox
+//===============================
+input[type=checkbox] {    
+        display: none;
+// Checkbox in checked state
+        &:checked {
+        ~ .collapse {
+        height: 250px;
+        }
+        }
+}
+
+//===============================
+//3. Collapse Menu
+//===============================
+
+.collapse {
+        text-align: right; //position the burger icon
+        color: $black;
+
+       &__menu-content {
+@media (max-width: 991.98px) { //collapsed
+        text-align: center; //position the text inside the collapsed box
+@media (max-width: 575.98px) {
+        text-align: left; //position the text inside the collapsed box
+}
+
+        }
+        }
+
+        &__menu-content a {
+                text-decoration: none;
+                color:$black;
+                font-family: $font-poppins;
+                margin-left:1em;
+        }
+        
+        .link-text
+        {
+                font-size: $xx-large;
+                background-color: yellow;
+        }
+
+@media (max-width: 991.98px) // when x-small, small and medium: Collapsed
+{
+        @include animate;
+        display: block;
+        width: 170px;
+@media (max-width: 575.98px) {
+        width: 80px;
+}
+        height: 2.8em; /* Needs to match Icon Font-Size */
+        overflow: hidden;
+        cursor:pointer;
+
+
+        &__menu-icon:before {
+                font-family: "Font Awesome 5 Free";
+                content: '\f0c9'; 
+                font-weight: 900; /* This needs to be 900 for the icon to display */
+                font-size:2.5em; /* Icon Font-Size to match */
+                color: red;
+        }
+
+        &__menu-content a {
+                line-height: 3em; //Styling (responsive to smaller screens)
+        }
+}
+
+// when large, x-large and xx-large: State not collapsed
+@media (min-width: 992px) {
+   
+        &__menu-content > li {
+                display: inline;
+        }
+}
+}
+
+
+

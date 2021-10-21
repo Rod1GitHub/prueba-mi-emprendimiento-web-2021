@@ -1,0 +1,6 @@
+.my-input {
+    background-color: $white;
+    &:focus {
+        background-color: $tangerine;
+    }
+}

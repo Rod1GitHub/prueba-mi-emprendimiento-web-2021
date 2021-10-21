@@ -1,0 +1,35 @@
+/* themes/_help-tell-me-screen-size */
+/* Use: display screen size message */
+/* Semi-Portable; Dependency: layout/_breakpoint-master-dont-modify */
+
+.help-tell-me-screen-size::before {
+    display:block;
+    text-align: center;
+    border: 1px solid black;
+    padding: .5em;
+    
+        @include screen-size('xx-large') {
+        background-color: red;
+        content: "Screen size: XX-Large. | Usually: desktop screens";
+        }
+        @include screen-size('x-large') {
+            background-color: darkorange;
+            content: "Screen size: X-Large. | Usually: most-used 13\" laptops";
+        }
+        @include screen-size('large') {
+            background-color: yellow;
+            content: "Screen size: Large. | Usually: small laptops";
+        }
+        @include screen-size('medium') {
+            background-color: rgb(122, 197, 61);
+            content: "Screen size: Medium. | Usually: tablets and e-readers";
+        }
+        @include screen-size('small') {
+            background-color: lightskyblue;
+            content: "Screen size: Small. | Usually: smartphones horizontal-view";
+        }
+        @include screen-size('x-small') {
+            background-color: pink;
+            content: "Screen size: X-Small. | Usually: smartphones";
+        }
+    }

@@ -1,0 +1,105 @@
+/* themes/help-show-me-layout */
+/* Use: To display layout boxes */
+/* Portable */
+
+// f = flex ; g = grid ; p = position-float
+.container, .f-container, .g-container, .p-container {background-color: aqua; border: 5px solid blue;}
+
+.box, .f-box, .g-box, .p-box {background-color: yellow;border: 5px solid orange;}
+
+.row, .f-row, .g-row, .p-row,
+nav,
+header,
+main,
+article,
+section,
+aside,
+footer {background-color: violet; border: 5px solid purple;}
+
+.col, .f-col, .g-col, .p-col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+.f-col-1, .f-col-2, .f-col-3, .f-col-4, .f-col-5, .f-col-6, .f-col-7, .f-col-8, .f-col-9, .f-col-10, .f-col-11, .f-col-12,
+.g-col-1, .g-col-2, .g-col-3, .g-col-4, .g-col-5, .g-col-6, .g-col-7, .g-col-8, .g-col-9, .g-col-10, .g-col-11, .g-col-12,
+.p-col-1, .p-col-2, .p-col-3, .p-col-4, .p-col-5, .p-col-6, .p-col-7, .p-col-8, .p-col-9, .p-col-10, .p-col-11, .p-col-12,
+.f-col-xx-lg-12,
+.f-col-xx-lg-11, 
+.f-col-xx-lg-10, 
+.f-col-xx-lg-9, 
+.f-col-xx-lg-8, 
+.f-col-xx-lg-7, 
+.f-col-xx-lg-6, 
+.f-col-xx-lg-5, 
+.f-col-xx-lg-4, 
+.f-col-xx-lg-3, 
+.f-col-xx-lg-2, 
+.f-col-xx-lg-1, 
+//
+.f-col-x-lg-12,
+.f-col-x-lg-11, 
+.f-col-x-lg-10, 
+.f-col-x-lg-9, 
+.f-col-x-lg-8, 
+.f-col-x-lg-7, 
+.f-col-x-lg-6, 
+.f-col-x-lg-5, 
+.f-col-x-lg-4, 
+.f-col-x-lg-3, 
+.f-col-x-lg-2, 
+.f-col-x-lg-1, 
+//
+.f-col-lg-12,
+.f-col-lg-11, 
+.f-col-lg-10, 
+.f-col-lg-9,
+.f-col-lg-8, 
+.f-col-lg-7, 
+.f-col-lg-6, 
+.f-col-lg-5, 
+.f-col-lg-4, 
+.f-col-lg-3, 
+.f-col-lg-2, 
+.f-col-lg-1, 
+//
+.f-col-md-12,
+.f-col-md-11, 
+.f-col-md-10, 
+.f-col-md-9, 
+.f-col-md-8, 
+.f-col-md-7,
+.f-col-md-6, 
+.f-col-md-5, 
+.f-col-md-4, 
+.f-col-md-3, 
+.f-col-md-2, 
+.f-col-md-1, 
+//
+.f-col-sm-12,
+.f-col-sm-11, 
+.f-col-sm-10, 
+.f-col-sm-9, 
+.f-col-sm-8, 
+.f-col-sm-7, 
+.f-col-sm-6,
+.f-col-sm-5, 
+.f-col-sm-4,
+.f-col-sm-3, 
+.f-col-sm-2, 
+.f-col-sm-1, 
+//
+.f-col-x-sm-12,
+.f-col-x-sm-11, 
+.f-col-x-sm-10, 
+.f-col-x-sm-9, 
+.f-col-x-sm-8, 
+.f-col-x-sm-7, 
+.f-col-x-sm-6, 
+.f-col-x-sm-5, 
+.f-col-x-sm-4, 
+.f-col-x-sm-3, 
+.f-col-x-sm-2, 
+.f-col-x-sm-1
+{background-color: pink; border: 5px solid red;}
+
+.f-col-auto {background-color: pink; border: 5px solid orange;}
+
+.pos-right, .pos-left, .pos-fixed {background-color:darkgrey; border:1px solid black;}

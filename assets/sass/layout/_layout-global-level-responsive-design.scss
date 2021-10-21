@@ -1,0 +1,122 @@
+/* layout/layout-global-level-responsive-design */
+/* Use: layout global definitions */
+/* Semi-Portable; Dependency: layout/_breakpoint-master-dont-modify */
+
+/* Parent Child Level Diagram
+|.container
+|--|nav-box
+|--|--|header-box
+|--|--|main-box
+|--|--|article-box
+|--|--|section-box
+|--|--|aside-box
+|--|--|.row-box
+|--|--|--|.col (can be child of header, main, article, section, aside, .row)
+|--|footer-box (child of .container)
+*/
+
+
+
+.author-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: 575.98px) {
+        justify-content:center;}
+    padding: 1em 0;
+    width: 90%;
+    margin: auto;
+
+    &__description {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__circle-img {
+        border-radius: 50%;
+        object-fit: cover; //needed for rectangular images}  
+            width: 95px;
+            height: 95px;
+        @media (max-width: 1199.98px) {
+            width: 95px;
+            height: 95px;
+        }
+        @media (max-width: 991.98px) {
+            width: 95px;
+            height: 95px;
+        }
+        @media (max-width: 767.98px) {
+            width: 75px;
+            height: 75px;  
+        }
+        @media (max-width: 575.98px) {
+            width: 60px;
+            height: 60px;  
+        }
+
+        }
+    &__username{
+            color: red;
+            align-self: center;
+            margin: 0 0 0 20px;
+            &--bold {
+                font-size: $large; 
+                @media (max-width: 767.98px) {
+                    font-size: $medium;
+                }
+                color: $smoky-black;
+                font-weight: $weight-bold;
+            }
+            &--light {
+                font-size: $medium; 
+                @media (max-width: 767.98px) {
+                    font-size: $small;
+                }
+                color: $granite-gray;
+                font-weight: $weight-normal;
+            }
+                }
+
+
+    &__interaction {
+        align-self:center;
+        @media (max-width: 575.98px) {
+        display: none;
+    }
+    }
+}
+
+.on-off {
+    @media (max-width: 575.98px) {
+    display: none;
+}
+}
+
+.box{
+    width: 90%;
+    margin: auto;
+    margin-top: 1em;
+    @media (max-width: 575.98px) {
+       text-align: center;
+    }
+}
+
+.video-box {
+    display: flex;
+    flex-wrap: wrap;
+    direction: row;
+    justify-content:flex-start;
+    text-align: left;
+
+    &__card{
+        padding: 1em;
+    }
+
+    &__card  img{
+        max-width: 100%; //make img responsive
+        height: auto; //make img responsive
+        }
+}
+
+
+

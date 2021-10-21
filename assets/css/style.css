@@ -1,0 +1,321 @@
+/* abstracts/variables */
+/* Colors */
+/* Font Family */
+/* Font weight */
+/* Font Size */
+/* 50px */
+/* 30px */
+/* 16px */
+/* 14px */
+/* 12px */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* base/typography */
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.875em;
+  font-weight: 700;
+  padding: 5px;
+}
+
+h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 700;
+  padding-top: 0.5em;
+}
+@media (max-width: 767.98px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  color: #000000;
+  font-weight: 400;
+  padding-top: 0.5em;
+}
+@media (max-width: 767.98px) {
+  h5 {
+    font-size: 1em;
+  }
+}
+
+label {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75em;
+  font-weight: 700;
+  padding: 5px;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+a {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.my-button {
+  color: #FFAF6D;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  /* padding: 15px 32px; */
+  /* margin: 0 10px; */
+  font-size: 1em;
+}
+@media (max-width: 1199.98px) {
+  .my-button {
+    padding: 9px 24px;
+    margin: 0 8px;
+    font-size: 1em;
+  }
+}
+@media (max-width: 991.98px) {
+  .my-button {
+    padding: 9px 24px;
+    margin: 0 6px;
+    font-size: 1em;
+  }
+}
+@media (max-width: 767.98px) {
+  .my-button {
+    padding: 7px 20px;
+    margin: 0 4px;
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 575.98px) {
+  .my-button {
+    padding: 5px 16px;
+    margin: 0 2px;
+    font-size: 0.8em;
+  }
+}
+.my-button--red {
+  background-color: tomato;
+}
+.my-button--blue {
+  background-color: #82b4ff;
+}
+.my-button:hover {
+  background-color: #FFFFFF;
+  border: solid 2px #2E1503;
+}
+
+/* component/collapsable-menu-css-only */
+/* Use: Burguer Icon without JS */
+/* Portable */
+.f-nav-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+.f-nav-box__brand-logo {
+  width: auto;
+  height: 5em;
+  padding: 10px 0;
+  width: 200px;
+  height: auto;
+}
+@media (max-width: 1199.98px) {
+  .f-nav-box__brand-logo {
+    width: 180px;
+    height: auto;
+  }
+}
+@media (max-width: 991.98px) {
+  .f-nav-box__brand-logo {
+    width: 160px;
+    height: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .f-nav-box__brand-logo {
+    width: 140px;
+    height: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .f-nav-box__brand-logo {
+    width: 120px;
+    height: auto;
+  }
+}
+.f-nav-box__menu {
+  align-self: center;
+}
+@media (max-width: 991.98px) {
+  .f-nav-box__menu {
+    align-self: stretch;
+    padding: 20px 0;
+  }
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox]:checked ~ .collapse {
+  height: 250px;
+}
+
+.collapse {
+  text-align: right;
+  color: #000000;
+}
+@media (max-width: 991.98px) {
+  .collapse__menu-content {
+    text-align: center;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 575.98px) {
+  .collapse__menu-content {
+    text-align: left;
+  }
+}
+.collapse__menu-content a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  margin-left: 1em;
+}
+.collapse .link-text {
+  font-size: 35px;
+  background-color: yellow;
+}
+@media (max-width: 991.98px) {
+  .collapse {
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: block;
+    width: 170px;
+    height: 2.8em;
+    /* Needs to match Icon Font-Size */
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 575.98px) {
+  .collapse {
+    width: 80px;
+  }
+}
+@media (max-width: 991.98px) {
+  .collapse__menu-icon:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c9";
+    font-weight: 900;
+    /* This needs to be 900 for the icon to display */
+    font-size: 2.5em;
+    /* Icon Font-Size to match */
+    color: red;
+  }
+}
+@media (max-width: 991.98px) {
+  .collapse__menu-content a {
+    line-height: 3em;
+  }
+}
+@media (min-width: 992px) {
+  .collapse__menu-content > li {
+    display: inline;
+  }
+}
+
+.my-input {
+  background-color: #FFFFFF;
+}
+.my-input:focus {
+  background-color: #FFAF6D;
+}
+
+/*# sourceMappingURL=style.css.map */
