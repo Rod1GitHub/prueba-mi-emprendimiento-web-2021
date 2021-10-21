@@ -10,45 +10,34 @@
         flex-wrap:          nowrap;//move down to the next line
         justify-content:    space-between; //horizontal
         //end flex properties
-        width: 90%;
+        width: 100%;
         margin: auto;
+        background-color:$black;
+
 
         &__brand {
         }
 
         &__brand-logo {
-                width: auto;
-                height: 5em;
-                padding: 10px 0;
-                width: 200px; 
-                height: auto;
-                @media (max-width: 1199.98px) {
-                        width: 180px; 
-                        height: auto;
-                    }
-                    @media (max-width: 991.98px) {
-                        width: 160px; 
-                        height: auto;
-                    }
+                width: 60px;
+                height: 60px;
+                padding: 5px 0px 5px 20px;
+                
                     @media (max-width: 767.98px) {
-                        width: 140px; 
-                        height: auto; 
-                    }
-                    @media (max-width: 575.98px) {
-                        width: 120px; 
-                        height: auto;
+                        padding: 8px 0px 0px 20px;
+
                     }
 
         }
     
         &__menu {
         align-self: center;
+        margin-right: 40px;
         @media (max-width: 991.98px) {
         align-self: stretch;
         padding: 20px 0; 
-
+        margin-right: 5px;
         }
-                
         }
     }
 
@@ -74,7 +63,7 @@ input[type=checkbox] {
 // Checkbox in checked state
         &:checked {
         ~ .collapse {
-        height: 250px;
+        height: 170px;
         }
         }
 }
@@ -89,7 +78,7 @@ input[type=checkbox] {
 
        &__menu-content {
 @media (max-width: 991.98px) { //collapsed
-        text-align: center; //position the text inside the collapsed box
+        text-align: right; //position the text inside the collapsed box
 @media (max-width: 575.98px) {
         text-align: left; //position the text inside the collapsed box
 }
@@ -98,17 +87,17 @@ input[type=checkbox] {
         }
 
         &__menu-content a {
+                color:$white;
                 text-decoration: none;
-                color:$black;
                 font-family: $font-poppins;
+                font-size: $medium;
                 margin-left:1em;
+                &:hover{
+                        color:$orange;
+                }
         }
         
-        .link-text
-        {
-                font-size: $xx-large;
-                background-color: yellow;
-        }
+
 
 @media (max-width: 991.98px) // when x-small, small and medium: Collapsed
 {
@@ -116,7 +105,7 @@ input[type=checkbox] {
         display: block;
         width: 170px;
 @media (max-width: 575.98px) {
-        width: 80px;
+        width: 120px;
 }
         height: 2.8em; /* Needs to match Icon Font-Size */
         overflow: hidden;
@@ -128,7 +117,7 @@ input[type=checkbox] {
                 content: '\f0c9'; 
                 font-weight: 900; /* This needs to be 900 for the icon to display */
                 font-size:2.5em; /* Icon Font-Size to match */
-                color: red;
+                color:$white;
         }
 
         &__menu-content a {

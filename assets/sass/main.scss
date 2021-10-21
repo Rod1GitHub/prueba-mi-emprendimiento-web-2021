@@ -9,9 +9,9 @@
 @import './base/reset';
 @import './base/typography';
 // 4 Layout (grid)
-//@import './layout/breakpoint-master-dont-modify';
+@import './layout/breakpoint-master-dont-modify';
 //@import './layout/column-master-dont-modify';
-//@import './layout/layout-global-level-responsive-design';
+@import './layout/layout-global-level-responsive-design';
 // 5 Components (styles)
     //accordion
     //alerts
@@ -43,6 +43,6 @@
     //contact
 // 7 Themes 
 //@import './themes/help-show-me-layout';
-//@import './themes/help-tell-me-screen-size';
+@import './themes/help-tell-me-screen-size';
     //theme
     //admin
