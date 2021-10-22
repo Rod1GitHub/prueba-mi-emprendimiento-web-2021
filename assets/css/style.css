@@ -602,49 +602,44 @@ i {
   margin: auto;
   width: 200px;
 }
-
-/* 
-.caja-animada {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    animation-name: caja;
-    animation-duration: 4s;
-    animation-delay: 2g;
-    animation-iteration-count: infinite;
+.my-animation__horizontal {
+  animation-name: horizontal-move;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.my-animation__circle {
+  animation-name: circle-move;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center;
+  transform-box: fill-box;
+  width: 100px;
+  height: 100px;
 }
 
-@keyframes caja {
-    0% {
-        transform: translate(0%, 0%);
-    }
-    50% {
-        transform: translate(20%, 0%);
-    }
-    100% {
-        transform: translate(0%, 0%);
-    }
+@keyframes horizontal-move {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  50% {
+    transform: translate(20%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
 }
-
-.caja-animadados {
-    width: 100px;
-    height: 100px;
-    animation-name: cajados;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    transform-box: fill-box;
-    transform-origin: center;
-    animation-timing-function: linear;
+@keyframes circle-move {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-@keyframes cajados {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-} */
 .my-button {
   color: #FFAF6D;
   border: none;

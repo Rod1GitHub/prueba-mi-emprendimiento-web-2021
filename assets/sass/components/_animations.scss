@@ -2,46 +2,42 @@
     margin: auto;
     width: 200px;
     
-}
-/* 
-.caja-animada {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    animation-name: caja;
-    animation-duration: 4s;
-    animation-delay: 2g;
-    animation-iteration-count: infinite;
-}
-
-@keyframes caja {
-    0% {
-        transform: translate(0%, 0%);
+&__horizontal {
+        //1. Animation Basics
+        animation-name: horizontal-move;
+        animation-duration: 6s;
+        //2. Animation
+        animation-iteration-count: infinite;
+        //3. Non-animation related
+        width: 100px;
+        height: 100px;
+        position: relative;
     }
-    50% {
-        transform: translate(20%, 0%);
+&__circle {
+        //1. Animation Basics
+        animation-name: circle-move;
+        animation-duration: 6s;
+        //2. Animation
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        transform-origin: center;
+        transform-box: fill-box;
+        //3. Non-animation related
+        width: 100px;
+        height: 100px;
     }
-    100% {
-        transform: translate(0%, 0%);
-    }
-}
-
-.caja-animadados {
-    width: 100px;
-    height: 100px;
-    animation-name: cajados;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    transform-box: fill-box;
-    transform-origin: center;
-    animation-timing-function: linear;
 }
 
-@keyframes cajados {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-} */
+// Animation keyframes uses "animation-name:"
+
+@keyframes horizontal-move {
+    0% {transform: translate(0%, 0%);}
+    50% {transform: translate(20%, 0%);}
+    100% {transform: translate(0%, 0%);}
+}
+
+@keyframes circle-move {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
