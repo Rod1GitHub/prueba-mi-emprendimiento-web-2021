@@ -1,18 +1,19 @@
 // main.scss # Manifest File
 // 1 Abstracts
-@import './abstracts/variables';
+    @import './abstracts/variables';
     //functions
     //mixins
     //placeholders
 // 2 Vendors
 // 3 Base
-@import './base/reset';
-@import './base/typography';
+    @import './base/reset';
+    @import './base/typography';
 // 4 Layout (grid)
-@import './layout/breakpoint-master-dont-modify';
-//@import './layout/column-master-dont-modify';
-@import './layout/layout-global-level-responsive-design';
+    @import './layout/breakpoint-master-dont-modify';
+    @import './layout/column-master-dont-modify';
+    @import './layout/layout-global-level-responsive-design';
 // 5 Components (styles)
+    @import './components/animations';
     //accordion
     //alerts
     //badge
@@ -22,7 +23,7 @@
     //carousel
     //collapse
     @import './components/nav-box-css-only';
-    //@import './components/footer-box';
+    @import './components/footer-box';
     //cropdowns
     //forms
     @import './components/inputs';

@@ -11,7 +11,8 @@
         justify-content:    space-between; //horizontal
         //end flex properties
         width: 100%;
-        margin: auto;
+        //margin: auto;
+        margin-bottom: 10px;
         background-color:$black;
 
 
@@ -31,12 +32,12 @@
         }
     
         &__menu {
-        align-self: center;
+                margin-top: 10px;
         margin-right: 40px;
         @media (max-width: 991.98px) {
         align-self: stretch;
         padding: 20px 0; 
-        margin-right: 5px;
+        margin-right: 20px;
         }
         }
     }
@@ -63,7 +64,7 @@ input[type=checkbox] {
 // Checkbox in checked state
         &:checked {
         ~ .collapse {
-        height: 170px;
+        height: 230px;
         }
         }
 }
@@ -118,6 +119,8 @@ input[type=checkbox] {
                 font-weight: 900; /* This needs to be 900 for the icon to display */
                 font-size:2.5em; /* Icon Font-Size to match */
                 color:$white;
+      
+
         }
 
         &__menu-content a {

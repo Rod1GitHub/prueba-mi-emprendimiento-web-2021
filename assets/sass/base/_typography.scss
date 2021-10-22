@@ -2,67 +2,64 @@
 
 body{
     font-family: $font-poppins;
+    }
+
+.f-nav-box__menu .collapse__menu-content li a {
+    font-weight: $weight-bold;
+}
+
+h3 {
+
     font-family: $font-ubuntu;
-    }
-    
-    h1 {
-        font-family: $font-ubuntu;
-        font-size: $xx-large;
-        font-weight: $weight-regular;
-    }
-    
-    h2 {
-        font-family: $font-poppins;
-        font-size: $xx-large;
-        font-weight: $weight-bold;
-    }
-    
-    h3 {
-        font-family: $font-poppins;
-        font-size: $x-large;
-        font-weight: $weight-bold;
-        padding:5px;
-    }
+    font-size: $large;
+    font-weight: $weight-bold;
+    margin: 10px 0;
+}
 
-    h4 {
-        font-family: $font-ubuntu;
-        font-size: $large;
-        color: $black;
-        font-weight: $weight-bold;
-        padding-top: .5em;
-        @media (max-width: 767.98px) {
-            font-size: $large;   
-    }
-    }
+h4 {
 
-    h5 {
-        font-family: $font-ubuntu;
-        font-size: $medium;
-        color: $black;
-        font-weight: $weight-regular;
-        padding-top: .5em;
-        @media (max-width: 767.98px) {
-            font-size: $medium;   
-    }
-    }
-  
+    font-family: $font-ubuntu;
+    font-size: $medium;
+    font-weight: $weight-bold;
+    margin: 8px 0;
+}
 
-    
-    label {
-        font-family: $font-poppins;
-        font-size: $x-small;
-        font-weight: $weight-bold;
-        padding: 5px;;
-    }
-        
-    p {
-        font-family: $font-ubuntu;
-        font-size: $medium;
-        font-weight: $weight-regular;
-    }
-    
-    a {
-        font-family: $font-ubuntu;
-        font-size: $large;
-        font-weight: $weight-bold;
-    }
+h5 {
+    font-family: $font-poppins;
+    font-size: $medium;
+    font-weight: $weight-bold;
+    background-color: $gray;
+    color: $white;
+    padding: 5px 0;
+    text-align: center;
+    margin: 6px 0;
+
+}
+
+h6 {
+
+    font-family: $font-ubuntu;
+    font-size: $medium;
+    font-weight: $weight-bold;
+    margin: 4px 0;
+}
+
+
+p {
+    font-family: $font-ubuntu;
+    font-size: $medium;
+    font-weight: $weight-regular;
+    line-height: 1.5;
+}
+
+.article3 ul {
+    list-style-type:circle;
+    margin: 10px;
+    padding: 10px;
+    color: $black;
+    line-height: 1.5;
+  }
+
+.article3 a {
+    text-decoration: none;
+}

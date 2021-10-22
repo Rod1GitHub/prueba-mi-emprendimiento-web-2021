@@ -1,9 +1,61 @@
 .footer-box {
+    display: flex;
+    justify-content: space-around;
+    background-color: $black;
     text-align: center;
-    padding: 1em 0;
-    & p {
-    color: $granite-gray;
+    padding: 30px 0;
+    margin-top: 10px;
+
+    @media (max-width: 767.98px) {
+        flex-direction: column;
+        padding: 50px;
     }
 
+
+    & p {
+    color: $white;
+    display: inline-block;
+    @media (max-width: 767.98px) {
+        display: block;
+        padding-bottom: 10px;
+    }
+    padding-right: 20px;
+    font-family: $font-poppins;
+    font-size: $small;
+    }
+
+    &__start {
+
+    }
+
+    &__end {
+
+
+        &-email {
+            font-family: $font-poppins;
+            background-color: $white;
+            border-radius: 5px;
+            border: 1px solid $gray;
+            padding: 4px;
+            &:focus {background-color: $tangerine;}
+            @media (max-width: 767.98px) {
+                display: block;
+                margin:auto;
+            }
+
+        }
+
+        &-enviar {
+            font-family: $font-poppins;
+            background-color:$tangerine;
+            border-radius: 5px;
+            border: 1px solid $gray;
+            padding: 4px;
+            cursor: pointer;
+            &:hover {background-color:$white;}
+        }
+    }
+
+    
 }
 

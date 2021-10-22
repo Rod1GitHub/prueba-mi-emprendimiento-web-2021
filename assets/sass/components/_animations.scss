@@ -1,0 +1,47 @@
+.my-animation {
+    margin: auto;
+    width: 200px;
+    
+}
+/* 
+.caja-animada {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: caja;
+    animation-duration: 4s;
+    animation-delay: 2g;
+    animation-iteration-count: infinite;
+}
+
+@keyframes caja {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    50% {
+        transform: translate(20%, 0%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+.caja-animadados {
+    width: 100px;
+    height: 100px;
+    animation-name: cajados;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation-timing-function: linear;
+}
+
+@keyframes cajados {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
